@@ -4,7 +4,7 @@
   --black: #242D49;
   --gray: #788097;
   --blueCard: #DDF8FE;
-  --puprle: rgb(238,210,255);
+  --purple: rgb(238,210,255);
   --boxShadow: 0px 19px 60px rgb(0, 0, 0, 18%);
   --orangeCard: rgba(252,166,31,0.45);
   --smBoxShadow: -79px 51px 60px rgba(0,0,0,0);
@@ -30,4 +30,15 @@
   cursor: pointer;
   color: var(--orange);
   border: 1px solid var(--orange);
+}
+.blur{
+  position: absolute;
+  width: 22rem;
+  height: 14rem;
+  border-radius: 50%;
+  background: #edd0ff;
+  z-index: -9;
+  top: -18%;
+  left: 56%;
+  filter: blur(120px);
 }

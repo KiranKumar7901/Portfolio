@@ -11,6 +11,7 @@
     flex-direction: column;
     position: relative;
     /* flex: 1; */
+    margin-top: 3rem;
 }
 .awesome>:nth-child(1){
     color: var(--black);
@@ -36,4 +37,12 @@
 }
 .cards>*{
     position: absolute;
+}
+.s-blur2{
+    left: 20rem;
+    top: -5rem;
+}
+.s-blur1{
+    top: 10rem;
+    left: 15rem;
 }

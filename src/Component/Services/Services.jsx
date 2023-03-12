@@ -1,8 +1,8 @@
 import React from "react";
 import "./Services.css";
 import Heartemoji from "../Images/heartemoji.png";
-import developer from "../Images/dd.png"
-import dev from "../Images/dl.png"
+import developer from "../Images/dd.png";
+import dev from "../Images/dl.png";
 import Card from "../Card/Card";
 
 const Services = () => {
@@ -19,34 +19,38 @@ const Services = () => {
           Animi voluptatum, excepturi, natus enim temporibus quasi sed impedit
           alias,
           <br /> eveniet quaerat optio nam recusandae.
-              </span>
-              <a href={dev} download>
-        <button className="button s-button">Download CV</button>
-              </a>
+        </span>
+        <a href={dev} download>
+          <button className="button s-button">Download CV</button>
+        </a>
         <div className="blur s-blur1" style={{ background: "#ABF1FF9" }}></div>
       </div>
       <div className="cards">
-        <div style={{top: '-3rem', left: "26rem" }}>
+        <div style={{ top: "-3rem", left: "26rem" }}>
           <Card
             emoji={Heartemoji}
             heading={"Design"}
             detail={"Figma, Sketch, Photoshop, Adobe, Adobe XD"}
           />
         </div>
-        <div style={{ top : '12rem',left: "8rem" }}>
+        <div style={{ top: "12rem", left: "8rem" }}>
           <Card
             emoji={developer}
             heading={"Developer"}
             detail={"HTML, CSS, JavaScript, C++, Java, ReactJs, MySQL"}
           />
         </div>
-        <div style={{ top : '8rem',left: "44rem" }}>
+        <div style={{ top: "8rem", left: "44rem" }}>
           <Card
             emoji={dev}
             heading={"UI/UX"}
             detail={"Adobe XD, Figma, Adobe Illustrator"}
           />
         </div>
+        <div
+          className="blur s-blur2"
+          style={{ background: "#C1F5FF" }}
+        ></div>
       </div>
     </div>
   );
