@@ -3,9 +3,9 @@ import './Intro.css'
 import GitHub from '../Images/github.png'
 import LinkedIn from '../Images/linkedin.png'
 import Instagram from '../Images/instagram.png'
-import d1 from '../Images/1.png'
-import d2 from '../Images/2.png'
-import d3 from '../Images/3.png'
+import blue from '../Images/1.png'
+import orange from '../Images/2.png'
+import boy from '../Images/3.png'
 import FloatingDiv from '../FloatingDiv/FloatingDiv'
 import crown from '../Images/crown.png'
 import award from '../Images/award.png'
@@ -28,9 +28,9 @@ const Intro = () => {
               </div>
           </div>
           <div className="i-right">
-              <img src={d2} alt="" />
-              <img src={d1} alt="" />
-              <img src={d3} alt="" />
+              <img src={orange} alt="" />
+              <img src={blue} alt="" />
+              <img src={boy} alt="" />
               <img src={cmh} alt="" />
               <div style={{ top: '-4%' , left: '68%' }}>
                   <FloatingDiv image={crown} txt1='Web' txt2='Developer'/>

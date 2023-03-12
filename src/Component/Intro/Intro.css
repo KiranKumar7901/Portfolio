@@ -8,7 +8,7 @@
     position: relative;
     flex: 1;
     flex-direction: column;
-    gap: 1rem;
+    gap: 2rem;
 }
 .i-name{
     display: flex;
@@ -63,9 +63,11 @@
     top: 5%;
 }
 .i-right>:nth-child(3){
-    transform: scale(0.17);
-    left:-87rem;
-    top: -102rem;
+    /* transform: scale(0.17); */
+    width: 580px;
+    height: 580px;
+    left: 3rem;
+    top: -7rem;
 }
 .i-right>:nth-child(4){
     transform: scale(0.8);
