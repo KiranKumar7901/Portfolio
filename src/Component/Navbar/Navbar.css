@@ -2,6 +2,7 @@
     height: 10vh;
     display: flex;
     justify-content: space-between;
+    margin-top: 1rem;
 }
 
 .n-left{
