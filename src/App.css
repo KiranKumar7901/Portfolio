@@ -7,11 +7,11 @@
   --purple: rgb(238,210,255);
   --boxShadow: 0px 19px 60px rgb(0, 0, 0, 18%);
   --orangeCard: rgba(252,166,31,0.45);
-  --smBoxShadow: -79px 51px 60px rgba(0,0,0,0);
+  --smBoxShadow: -79px 51px 60px rgba(0,0,0,0.1);
 }
 .App {
   padding: 0.5rem 3rem;
-  overflow: hidden;
+  /* overflow: hidden; */
   color: var(--black);
 }
 
