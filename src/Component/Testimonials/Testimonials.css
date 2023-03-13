@@ -20,12 +20,12 @@
     color: var(--orange);
 }
 .t-blur1{
-    left: 58rem;
-    top: 30rem;
+    left: 50rem;
+    top: 25rem;
 }
 .t-blur2{
-    top: 9rem;
-    left: 0;
+    top: 14rem;
+    left: 14rem;
 }
 .testimonials{
     display: flex;
