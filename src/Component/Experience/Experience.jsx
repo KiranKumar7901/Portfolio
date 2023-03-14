@@ -1,23 +1,29 @@
 import React from 'react'
 import './Experience.css'
 
+import { themeContext } from '../../context';
+import { useContext } from 'react';
+
 const Experience = () => {
+    const theme = useContext(themeContext);
+    const darkMode = theme.state.darkMode;
+
   return (
       <div className="experience">
           <div className="achievement">
-              <div className="circle">3+</div>
-              <span>Completed</span>
-              <span>Projects</span>
+              <div className="circle" style={darkMode?{background: 'linear-gradient(to bottom,#87e6fb 0%,#ffccbb 100%)', border:'10px solid var(--gray)'}:{}}>3+</div>
+              <span style={darkMode?{color:'var(--orange)'}:{}}>Completed</span>
+              <span style={darkMode?{color:'var(--gray)'}:{}}>Projects</span>
           </div>
           <div className="achievement">
-              <div className="circle">8+</div>
-              <span>Years</span>
-              <span>Experience</span>
+              <div className="circle" style={darkMode?{background: 'linear-gradient(to bottom,#87e6fb 0%,#ffccbb 100%)', border:'10px solid var(--gray)'}:{}}>8+</div>
+              <span style={darkMode?{color:'var(--orange)'}:{}}>Years</span>
+              <span style={darkMode?{color:'var(--gray)'}:{}}>Experience</span>
           </div>
           <div className="achievement">
-              <div className="circle">5+</div>
-              <span>Companies</span>
-              <span>Works</span>
+              <div className="circle" style={darkMode?{background: 'linear-gradient(to bottom,#87e6fb 0%,#ffccbb 100%)', border:'10px solid var(--gray)'}:{}}>5+</div>
+              <span style={darkMode?{color:'var(--orange)'}:{}}>Companies</span>
+              <span style={darkMode?{color:'var(--gray)'}:{}}>Works</span>
           </div>
     </div>
   )

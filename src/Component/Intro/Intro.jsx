@@ -1,8 +1,8 @@
 import React from 'react'
 import './Intro.css'
-import GitHub from '../Images/github.png'
-import LinkedIn from '../Images/linkedin.png'
-import Instagram from '../Images/instagram.png'
+import GitHub from '@iconscout/react-unicons/icons/uil-github'
+import LinkedIn from '@iconscout/react-unicons/icons/uil-linkedin'
+import Instagram from '@iconscout/react-unicons/icons/uil-instagram'
 import blue from '../Images/1.png'
 import orange from '../Images/2.png'
 import boy from '../Images/3.png'
@@ -11,20 +11,25 @@ import crown from '../Images/crown.png'
 import award from '../Images/award.png'
 import cmh from '../Images/cmh.png'
 
+import { themeContext } from '../../context'
+import { useContext } from 'react'
+
 const Intro = () => {
+    const theme = useContext(themeContext);
+    const darkMode = theme.state.darkMode;
   return (
       <div className="intro">
           <div className="i-left">
               <div className="i-name">
-                  <span>Hi! I am</span>
+                  <span style={{ color: darkMode ? 'var(--blueCard)' : '' }}>Hi! I am</span>
                   <span>Kiran Kumar</span>
-                  <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident vel mollitia quasi cupiditate illo nam recusandae totam minus iste at blanditiis, minima veritatis obcaecati! Soluta itaque rerum earum! Quis, nemo.</span>
+                  <span style={{color:darkMode?'var(--blueCard)':''}}>Frontend Web Developer <br />Languages Known: HTML, CSS, JavaScript, C, C++ </span>
               </div>
               <button className="button i-button">Hire Me</button>
-              <div className="i-icons">
-                  <img src={GitHub} alt="" />
-                  <img src={Instagram} alt="" />
-                  <img src={LinkedIn} alt="" />
+              <div className="i-icons" style={{ color: darkMode ? 'var(--orange)' : '' }} >
+                  <Instagram/>
+                  <GitHub/>
+                  <LinkedIn />
               </div>
           </div>
           <div className="i-right">

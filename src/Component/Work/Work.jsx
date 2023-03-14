@@ -5,14 +5,21 @@ import fb from "../Images/fb.png";
 import netflix from "../Images/netflix.png";
 import spotify from "../Images/spotify.png";
 import amazon from "../Images/amazon.png";
+import { themeContext } from "../../context";
+import { useContext } from "react";
 
 const Work = () => {
+  const theme = useContext(themeContext);
+  const darkMode = theme.state.darkMode;
+
   return (
     <div className="works">
       <div className="awesome">
-        <span>Works for All these</span>
+        <span style={darkMode ? { color: "var(--blueCard)" } : {}}>
+          Works for All these
+        </span>
         <span>Brands & Clients</span>
-        <span>
+        <span style={darkMode ? { color: "var(--blueCard)" } : {}}>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit.
           <br />
           Iste, autem numquam magnam inventore reiciendis hic?
@@ -33,15 +40,15 @@ const Work = () => {
         <div className="blur s-blur1" style={{ background: "#ABF1FF9" }}></div>
       </div>
       <div className="w-right">
-        <div className="w-mainCircle">
+        <div className="w-mainCircle" style={darkMode?{zIndex:'2'}:{}}>
           <div className="w-secCircle">
             <img src={upwork} alt="" />
           </div>
           <div className="w-secCircle">
             <img src={fb} alt="" />
           </div>
-          <div className="w-secCircle">
-           <img src={amazon} alt="" />
+          <div className="w-secCircle" style={darkMode? {border:'5px solid #b2b2b2',zIndex:'2'}:{}}>
+            <img src={amazon} alt="" />
           </div>
           <div className="w-secCircle">
             <img src={netflix} alt="" />
@@ -51,8 +58,11 @@ const Work = () => {
           </div>
         </div>
         {/* background circles */}
-        <div className="w-backCircle blueCircle"></div>
-        <div className="w-backCircle yellowCircle"></div>
+        <div
+          className="w-backCircle blueCircle"
+          style={darkMode ? { zIndex:'1'} : {}}
+        ></div>
+        <div className="w-backCircle yellowCircle" style={darkMode ? { zIndex:'1'}:{}}></div>
       </div>
     </div>
   );

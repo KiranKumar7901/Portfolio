@@ -8,11 +8,17 @@ import th1 from "../Images/th2.jpg";
 import th2 from "../Images/th2.jpg";
 import th3 from "../Images/th3.jpg";
 
+import { themeContext } from '../../context';
+import { useContext } from 'react';
+
 const Portfolio = () => {
+    const theme = useContext(themeContext);
+    const darkMode = theme.state.darkMode;
+
     return (
         <div className="portfolio">
             {/* heading */}
-            <span>Recent Projects</span>
+            <span style={darkMode?{color: 'var(--blueCard)'}:{}}>Recent Projects</span>
             <span>Portfolio</span>
             {/* Slider */}
             <Swiper

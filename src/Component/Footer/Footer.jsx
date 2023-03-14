@@ -5,16 +5,22 @@ import Instagram from '@iconscout/react-unicons/icons/uil-instagram'
 import FaceBook from '@iconscout/react-unicons/icons/uil-facebook'
 import GitHub from '@iconscout/react-unicons/icons/uil-github'
 
+import { themeContext } from '../../context'
+import { useContext } from 'react'
+
 const Footer = () => {
+  const theme = useContext(themeContext);
+  const darkMode = theme.state.darkMode;
+  
   return (
-      <div className="footer">
+      <div className="footer" >
       <img src={wave} alt="" style={{ width: '100%'}} />
-      <div className="f-content">
+      <div className="f-content" style={darkMode?{color:'black'}:{}}>
         <span>kirankumar992001@gmail.com</span>
         <div className="f-icons">
-          <Instagram color='white' size='3rem'/>
-          <FaceBook color='white' size='3rem'/>
-          <GitHub color='white' size='3rem'/>
+          <Instagram size='3rem' style={darkMode?{color:'black'}:{color: 'white'}}/>
+          <GitHub style={darkMode?{color:'black'}:{color: 'white'}} size='3rem'/>
+          <FaceBook style={darkMode?{color:'black'}:{color: 'white'}} size='3rem'/>
         </div>
       </div>
     </div>

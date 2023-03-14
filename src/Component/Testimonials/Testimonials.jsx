@@ -4,7 +4,13 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper";
 import "swiper/css/pagination";
 import "swiper/css";
+import { themeContext } from "../../context";
+import { useContext } from "react";
+
 const Testimonials = () => {
+  const theme = useContext(themeContext);
+  const darkMode = theme.state.darkMode;
+
   const clients = [
     {
       Name: "Kiran",
@@ -43,9 +49,9 @@ const Testimonials = () => {
         {clients.map((clients, index) => {
           return (
             <SwiperSlide key={index}>
-              <div className="testimonials">
-                <span>{clients.Name}</span>
-                <span>{clients.review}</span>
+              <div className="testimonials" style={darkMode?{background: 'rgba(255, 200, 150, 0.2)',border:'7px solid rgb(255, 200, 150)'}:{}}>
+                <span style={darkMode?{color: 'var(--orange)'}:{}}>{clients.Name}</span>
+                <span style={darkMode?{color: 'var(--blueCard)'}:{}}>{clients.review}</span>
               </div>
             </SwiperSlide>
           );

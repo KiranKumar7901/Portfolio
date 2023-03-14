@@ -7,11 +7,16 @@
     gap: 1rem;
     align-items: center;
     text-align: center;
-    background: rgba(255,255,255,0.26);
+    background: rgba(250, 187, 187, 0.26);
     border: 7px solid var(--orangeCard);
     box-shadow: var(--boxShadow);
     border-radius: 20px;
     padding: 0 26px 2rem 26px;
+}
+.card span:nth-of-type(1){
+    color: black;
+    font-size: 20px;
+    font-weight: 630;
 }
 .card span:nth-of-type(2){
     color: var(--gray);

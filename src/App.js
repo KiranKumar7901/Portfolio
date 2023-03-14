@@ -17,7 +17,7 @@ function App() {
   return (
     <div className="App"
       style={{
-        background: darkMode ? 'black' : '',
+        background: darkMode ? 'var(--blackbg)' : '',
       color: darkMode? 'white':''}}>
       <Navbar />
       <Intro />

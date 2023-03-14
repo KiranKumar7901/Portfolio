@@ -36,10 +36,11 @@
 .i-icons{
     margin-top: 3rem;
     display: flex;
-    gap: 0rem;
+    gap: 2.5rem;
+    margin-left: 1rem;
 }
 .i-icons>*{
-    transform: scale(0.8);
+    transform: scale(2.5);
 }
 .i-icons>*:hover{
     cursor: pointer;

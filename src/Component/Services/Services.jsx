@@ -5,13 +5,19 @@ import developer from "../Images/dd.png";
 import dev from "../Images/dl.png";
 import Card from "../Card/Card";
 
+import { themeContext } from "../../context";
+import { useContext } from "react";
+
 const Services = () => {
+  const theme = useContext(themeContext);
+  const darkMode = theme.state.darkMode;
+
   return (
     <div className="services">
       <div className="awesome">
-        <span>My Awesome</span>
+        <span style={{ color: darkMode ? '#DDF8FE' : '' }}>My Awesome</span>
         <span>Services</span>
-        <span>
+        <span style={{color:darkMode?'var(--blueCard)':''}}>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit.
           <br />
           Iste, autem numquam magnam inventore reiciendis hic?
