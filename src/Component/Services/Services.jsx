@@ -8,9 +8,13 @@ import Card from "../Card/Card";
 import { themeContext } from "../../context";
 import { useContext } from "react";
 
+import { motion } from "framer-motion";
+
 const Services = () => {
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
+
+  const transition = {duration: 2, type: 'spring'}
 
   return (
     <div className="services">
@@ -32,13 +36,18 @@ const Services = () => {
         <div className="blur s-blur1" style={{ background: "#ABF1FF9" }}></div>
       </div>
       <div className="cards">
-        <div style={{ top: "-3rem", left: "26rem" }}>
+        <motion.div
+          // initial={{ left: '45%' }}
+          // whileInView={{ left: '55%' }}
+          // transition={transition}
+          
+          style={{ top: "-3rem", left: "26rem" }}>
           <Card
             emoji={Heartemoji}
             heading={"Design"}
             detail={"Figma, Sketch, Photoshop, Adobe, Adobe XD"}
           />
-        </div>
+        </motion.div>
         <div style={{ top: "12rem", left: "8rem" }}>
           <Card
             emoji={developer}

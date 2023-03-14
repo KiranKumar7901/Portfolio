@@ -10,11 +10,14 @@ import FloatingDiv from '../FloatingDiv/FloatingDiv'
 import crown from '../Images/crown.png'
 import award from '../Images/award.png'
 import cmh from '../Images/cmh.png'
+import { motion } from 'framer-motion'
 
 import { themeContext } from '../../context'
 import { useContext } from 'react'
 
 const Intro = () => {
+
+    const transition = {duration: 2,type:'spring'}
     const theme = useContext(themeContext);
     const darkMode = theme.state.darkMode;
   return (
@@ -36,13 +39,27 @@ const Intro = () => {
               <img src={orange} alt="" />
               <img src={blue} alt="" />
               <img src={boy} alt="" />
-              <img src={cmh} alt="" />
-              <div style={{ top: '-4%' , left: '68%' }}>
+              <motion.img
+                  initial={{ left: '-5%' }}
+                  whileInView={{ left: '5%' }}
+                  transition={transition}
+                  src={cmh} alt="" />
+              <motion.div
+                  initial={{ top: '-15%' }}
+                  whileInView={{ top: '0%' }}
+                  transition={transition}
+
+                  style={{ top: '-4%', left: '68%' }}>
                   <FloatingDiv image={crown} txt1='Web' txt2='Developer'/>
-              </div>
-              <div style={{ top: '18rem' , left: '0rem' }}>
+              </motion.div>
+              <motion.div
+                  initial={{ top: '27rem' }}
+                  whileInView={{ top: '22rem' }}
+                  transition={transition}
+
+                  style={{ top: '18rem', left: '0rem' }}>
                   <FloatingDiv image={award} txt1='Best Design' txt2='Award'/>
-              </div>
+              </motion.div>
               {/* blur div */}
               <div className="blur" style={{ background: 'rgb(238,210,255' }}></div>
               <div className="blur" style={{background: '#C1F5FF',top:'17rem',width:'21rem',height:'11rem',left:'-9rem'}}></div>
