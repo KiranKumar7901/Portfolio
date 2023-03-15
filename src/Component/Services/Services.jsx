@@ -17,7 +17,7 @@ const Services = () => {
   const transition = {duration: 2, type: 'spring'}
 
   return (
-    <div className="services">
+    <div className="services" id="Services">
       <div className="awesome">
         <span style={{ color: darkMode ? '#DDF8FE' : '' }}>My Awesome</span>
         <span>Services</span>

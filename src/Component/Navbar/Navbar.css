@@ -29,7 +29,7 @@
     gap: 2rem;
     margin-right: 4rem;
 }
-.n-list>ul>li:hover{
+.li:hover{
     cursor: pointer;
     color: var(--orange);
 }
