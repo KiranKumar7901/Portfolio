@@ -8,6 +8,8 @@ import amazon from "../Images/amazon.png";
 import { themeContext } from "../../context";
 import { useContext } from "react";
 
+import { motion } from "framer-motion";
+
 const Work = () => {
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
@@ -40,7 +42,12 @@ const Work = () => {
         <div className="blur s-blur1" style={{ background: "#ABF1FF9" }}></div>
       </div>
       <div className="w-right">
-        <div className="w-mainCircle" style={darkMode?{zIndex:'2'}:{}}>
+        <motion.div
+          initial={{ rotate: 45 }}
+          whileInView={{ rotate: 0 }}
+          viewport={{ margin: '-40px' }}
+          transition={{duration: 3.5,type: 'spring'}}
+          className="w-mainCircle" style={darkMode ? { zIndex: '2' } : {}}>
           <div className="w-secCircle">
             <img src={upwork} alt="" />
           </div>
@@ -56,7 +63,7 @@ const Work = () => {
           <div className="w-secCircle">
             <img src={spotify} alt="" />
           </div>
-        </div>
+        </motion.div>
         {/* background circles */}
         <div
           className="w-backCircle blueCircle"

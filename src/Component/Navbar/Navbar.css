@@ -2,7 +2,6 @@
     height: 10vh;
     display: flex;
     justify-content: space-between;
-    position: sticky;
 }
 
 .n-left{

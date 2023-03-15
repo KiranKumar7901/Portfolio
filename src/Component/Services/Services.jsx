@@ -37,31 +37,39 @@ const Services = () => {
       </div>
       <div className="cards">
         <motion.div
-          // initial={{ left: '45%' }}
-          // whileInView={{ left: '55%' }}
-          // transition={transition}
+          initial={{ top: '-3rem' }}
+          whileInView={{ top: '0rem' }}
+          transition={transition}
           
-          style={{ top: "-3rem", left: "26rem" }}>
+          style={{ top: "-5rem", left: "26rem" }}>
           <Card
             emoji={Heartemoji}
             heading={"Design"}
             detail={"Figma, Sketch, Photoshop, Adobe, Adobe XD"}
           />
         </motion.div>
-        <div style={{ top: "12rem", left: "8rem" }}>
+        <motion.div
+          initial={{ left: '6rem' }}
+          whileInView={{ left: '8rem' }}
+          transition={transition}
+          style={{ top: "12rem", left: "8rem" }}>
           <Card
             emoji={developer}
             heading={"Developer"}
             detail={"HTML, CSS, JavaScript, C++, Java, ReactJs, MySQL"}
           />
-        </div>
-        <div style={{ top: "8rem", left: "44rem" }}>
+        </motion.div>
+        <motion.div
+          initial={{ left: '45rem' }}
+          whileInView={{ left: '43rem' }}
+          transition={transition}
+          style={{ top: "8rem", left: "43rem" }}>
           <Card
             emoji={dev}
             heading={"UI/UX"}
             detail={"Adobe XD, Figma, Adobe Illustrator"}
           />
-        </div>
+        </motion.div>
         <div
           className="blur s-blur2"
           style={{ background: "#C1F5FF" }}
