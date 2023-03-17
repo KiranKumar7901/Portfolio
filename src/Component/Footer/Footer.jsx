@@ -1,6 +1,6 @@
 import React from 'react'
 import './Footer.css'
-import wave from '../Images/wave.png'
+import wave1 from '../Images/wave1.png'
 import Instagram from '@iconscout/react-unicons/icons/uil-instagram'
 import FaceBook from '@iconscout/react-unicons/icons/uil-facebook'
 import GitHub from '@iconscout/react-unicons/icons/uil-github'
@@ -14,7 +14,7 @@ const Footer = () => {
   
   return (
       <div className="footer" >
-      <img src={wave} alt="" style={{ width: '100%'}} />
+      <img src={wave1} alt="" style={{width: '100%'}}/>
       <div className="f-content" style={darkMode?{color:'black'}:{}}>
         <span>kirankumar992001@gmail.com</span>
         <div className="f-icons">

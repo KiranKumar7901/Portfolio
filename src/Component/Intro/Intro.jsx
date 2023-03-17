@@ -29,7 +29,7 @@ const Intro = () => {
                   <span style={{color:darkMode?'var(--blueCard)':''}}>Frontend Web Developer <br />Languages Known: HTML, CSS, JavaScript, C, C++ </span>
               </div>
               <button className="button i-button">Hire Me</button>
-              <div className="i-icons" style={{ color: darkMode ? 'var(--orange)' : '' }} >
+              <div className="i-icons" style={{ color: darkMode ? 'var(--blueCard)' : '' }} >
                   <Instagram/>
                   <GitHub/>
                   <LinkedIn />

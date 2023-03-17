@@ -18,7 +18,7 @@ function App() {
     <div className="App"
       style={{
         background: darkMode ? 'var(--blackbg)' : '',
-      color: darkMode? 'white':''}}>
+      color: darkMode? 'var(--blueCard)':''}}>
       <Navbar />
       <Intro />
       <Services />
