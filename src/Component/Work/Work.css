@@ -1,8 +1,12 @@
 .works{
     padding: 0 3rem 0 3rem;
     display: flex;
-    height: 90vh;
-    margin-top: 9rem;
+    height: 70vh;
+    margin-top: 10rem;
+}
+.w-left{
+    display: flex;
+    justify-content: flex-start;
 }
 .w-right{
     position: relative;

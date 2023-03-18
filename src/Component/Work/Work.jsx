@@ -15,8 +15,8 @@ const Work = () => {
   const darkMode = theme.state.darkMode;
 
   return (
-    <div className="works">
-      <div className="awesome">
+    <div className="works" id='Experience'>
+      <div className="awesome w-left">
         <span style={darkMode ? { color: "var(--blueCard)" } : {}}>
           Works for All these
         </span>

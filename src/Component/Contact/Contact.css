@@ -1,8 +1,8 @@
 .contact-form{
     padding: 0 3rem 0 3rem;
     display: flex;
-    height: 80vh;
-    margin-top: 4rem;
+    height: 85vh;
+    margin-top: 8rem;
 }
 
 .c-right{
@@ -10,6 +10,7 @@
     justify-content: center;
     position: relative;
     flex: 1;
+    height: 50vh;
 }
 .c-right>form{
     display: flex;

@@ -9,7 +9,7 @@ const Experience = () => {
     const darkMode = theme.state.darkMode;
 
   return (
-      <div className="experience" id='Experience'>
+      <div className="experience">
           <div className="achievement">
               <div className="circle" style={darkMode?{background: 'linear-gradient(to bottom,#87e6fb 0%,#ffccbb 100%)', border:'10px solid var(--gray)'}:{}}>3+</div>
               <span style={darkMode?{color:'var(--orange)'}:{}}>Completed</span>
