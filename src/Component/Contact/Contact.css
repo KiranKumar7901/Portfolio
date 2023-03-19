@@ -38,3 +38,17 @@ textarea{
     top: 1rem;
     left: -30rem;
 }
+
+@media screen and (max-width: 480px) {
+    .contact-form{
+        padding: 0;
+        flex-direction: column;
+        margin-top: 0rem;
+    }
+    .c-left{
+        align-items: center;
+    }
+    .c-right{
+        align-items: flex-start;
+    }
+}

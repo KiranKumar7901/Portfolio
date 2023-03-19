@@ -35,7 +35,8 @@
     background: rgba(255, 19, 235, 0.070);
     border: 7px solid var(--blueCard);
     box-shadow: var(--boxShadow);
-    border-radius: 20px;
+    border-top-right-radius: 40px;
+    border-bottom-left-radius: 40px;
 }
 .testimonials span:nth-of-type(1){
     font-size: 2rem;
@@ -56,4 +57,15 @@
 }
 .t-wrapper .swiper-pagination-bullet-active{
     background: var(--orange);
+}
+
+@media screen and (max-width: 480px) {
+    .t-wrapper{
+        padding: 0;
+        gap: 0rem;
+    }
+    .testimonials{
+        border-radius: 40px;
+        padding: 2rem 4rem;
+    }
 }

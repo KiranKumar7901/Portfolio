@@ -10,7 +10,7 @@ const Contact = () => {
 
   return (
     <div className="contact-form" id='Contact'>
-        <div className="w-left" style={{display: 'flex',flex: '1',justifyContent: 'center',height: '50vh'}}>
+        <div className="c-left" style={{display: 'flex',flex: '1',justifyContent: 'center',height: '50vh'}}>
               <div className="awesome w-left">
                   <span style={darkMode?{color:'var(--blueCard)'}:{}}>Get in touch</span>
                   <span>Contact me</span>
