@@ -37,6 +37,8 @@ const Portfolio = () => {
                     <img src={th3} alt="" />
                 </SwiperSlide>
             </Swiper>
+            <div className="blur p-blur1" style={{background: 'var(--purple)'}}></div>
+            <div className="blur p-blur2" style={{background: '#fca71fab'}}></div>
         </div>
   )
 }

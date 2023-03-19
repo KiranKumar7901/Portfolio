@@ -21,12 +21,12 @@ const Intro = () => {
     const theme = useContext(themeContext);
     const darkMode = theme.state.darkMode;
   return (
-      <div className="intro">
+      <div className="intro" id='Intro'>
           <div className="i-left">
               <div className="i-name">
                   <span style={{ color: darkMode ? 'var(--blueCard)' : '' }}>Hi! I am</span>
                   <span>Kiran Kumar</span>
-                  <span style={{color:darkMode?'var(--blueCard)':''}}>Frontend Web Developer <br />Languages Known: HTML, CSS, JavaScript, C, C++ </span>
+                  <span style={{color:darkMode?'var(--blueCard)':''}}>Frontend Web Developer <br />Languages Known: HTML, CSS, JavaScript, C, C++ <br/> Java, ReactJs, MySQl.</span>
               </div>
               <button className="button i-button">Hire Me</button>
               <div className="i-icons" style={{ color: darkMode ? 'var(--blueCard)' : '' }} >
@@ -62,7 +62,7 @@ const Intro = () => {
               </motion.div>
               {/* blur div */}
               <div className="blur" style={{ background: 'rgb(238,210,255' }}></div>
-              <div className="blur" style={{background: '#C1F5FF',top:'17rem',width:'21rem',height:'11rem',left:'-9rem'}}></div>
+              <div className="blur" style={{background: '#C1F5FF',top:'17rem',width:'21rem',height:'11rem',left:'-25rem'}}></div>
           </div>
     </div>
   )

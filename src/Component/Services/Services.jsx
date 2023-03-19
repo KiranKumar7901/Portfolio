@@ -21,14 +21,12 @@ const Services = () => {
       <div className="awesome">
         <span style={{ color: darkMode ? '#DDF8FE' : '' }}>My Awesome</span>
         <span>Services</span>
-        <span style={{color:darkMode?'var(--blueCard)':''}}>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-          <br />
-          Iste, autem numquam magnam inventore reiciendis hic?
-          <br />
-          Animi voluptatum, excepturi, natus enim temporibus quasi sed impedit
-          alias,
-          <br /> eveniet quaerat optio nam recusandae.
+        <span style={{ color: darkMode ? 'var(--blueCard)' : '' }}>
+          I have developed an app using Java (Student Report Card Handling System) <br />
+          which takes the record of the student and generate the report card of the students.<br />
+          I have developed my Personal Portfolio using React Js and some small projects <br />
+          like Calculator, Clock using JavaScript <br />
+          and also developed an E-commerce Site and clone of Flipkart. 
         </span>
         <a href={dev} download>
           <button className="button s-button">Download CV</button>

@@ -9,9 +9,6 @@
     gap: 2rem;
     position: relative;
 }
-.t-heading{
-    align-self: start;
-}
 .t-heading>*{
     font-size: 2rem;
     font-weight: bold;

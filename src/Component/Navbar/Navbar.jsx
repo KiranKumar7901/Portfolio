@@ -11,10 +11,12 @@ const Navbar = () => {
         <div className="n-name">Kiran</div>
         <Toggle />
       </div>
+      <div className="blur n-blur1" style={{top:'-2rem',left:'-2rem',background:'var(--purple)'}}></div>
+      <div className="blur n-blur2" style={{top:'5rem',left:'32rem',background:'var(--color)'}}></div>
       <div className="n-right">
         <div className="n-list">
           <ul style={{ listStyleType: "none" }}>
-            <Link spy={true} to='Navbar' smooth={true}>
+            <Link spy={true} to='Intro' smooth={true}>
               <li className="li">Home</li>
             </Link>
             <Link spy={true} to='Services' smooth={true}>
@@ -31,7 +33,9 @@ const Navbar = () => {
             </Link>
           </ul>
         </div>
+        <Link spy={true} to='Contact' smooth={true}>
         <button className="button n-button">Contact</button>
+        </Link>
       </div>
     </div>
   );

@@ -1,6 +1,7 @@
 .intro{
     display: flex;
     height: 77vh;
+    padding: 0 3rem 0 3rem;
     margin-top: 9rem;
 }
 .i-left{

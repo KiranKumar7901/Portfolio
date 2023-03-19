@@ -9,6 +9,8 @@
   --boxShadow: 0px 19px 60px rgba(0, 0, 0, 0.18);
   --orangeCard: rgba(252,166,31,0.45);
   --smBoxShadow: -79px 51px 60px rgba(0,0,0,0.1);
+  --color:rgba(197, 255, 142, 0.518);
+  --color1:rgb(148, 142, 255);
 }
 .App {
   padding: 0.5rem 3rem;

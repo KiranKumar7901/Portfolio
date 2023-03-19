@@ -64,6 +64,7 @@ const Work = () => {
             <img src={spotify} alt="" />
           </div>
         </motion.div>
+        <div className="blur s-blur1" style={{ background: "var(--color)" }}></div>
         {/* background circles */}
         <div
           className="w-backCircle blueCircle"

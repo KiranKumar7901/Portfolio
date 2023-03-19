@@ -31,6 +31,10 @@ textarea{
     height: 4rem!important;
 }
 .c-blur1{
+    top: -3rem;
+    left: 36rem;
+}
+.c-blur2{
     top: 1rem;
-    left: 8rem;
+    left: -30rem;
 }
