@@ -48,3 +48,20 @@
     font-size: 1.5rem;
     font-weight: bold;
 }
+
+@media screen and (max-width: 480px) {
+    .experience{
+        gap: 2rem;
+        margin-bottom: 0rem;
+    }
+    .achievement span:nth-of-type(1){
+        color:lightseagreen;
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+    .achievement span:nth-of-type(2){
+        color: var(--orange);
+        font-size: 1.3rem;
+        font-weight: bold;
+    }
+}

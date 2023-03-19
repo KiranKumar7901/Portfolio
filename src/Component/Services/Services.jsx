@@ -65,7 +65,7 @@ const Services = () => {
           <Card
             emoji={dev}
             heading={"UI/UX"}
-            detail={"Adobe XD, Figma, Adobe Illustrator"}
+            detail={"Adobe XD, Figma, Adobe Illustrator,Adobe Photoshop, Adobe Premiere Pro, Adobe After Effects"}
           />
         </motion.div>
         <div

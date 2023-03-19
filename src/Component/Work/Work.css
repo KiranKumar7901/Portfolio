@@ -83,3 +83,27 @@
     left: 18rem;
     top: 8rem;
 }
+
+@media screen and (max-width: 480px) {
+    .works{
+        flex-direction: column;
+        height: 55rem;
+        padding: 0;
+        gap: 5rem;
+        margin-top: 25rem;
+    }
+    .w-right{
+        margin: 2rem;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        transform: scale(0.7);
+    }
+    .w-mainCircle{
+        position: static;
+    }
+    .w-backCircle{
+        margin-top: -1.5rem;
+        left: 9rem!important;
+    }
+}

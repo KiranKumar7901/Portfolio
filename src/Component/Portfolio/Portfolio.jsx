@@ -22,11 +22,29 @@ const Portfolio = () => {
             <span>Portfolio</span>
             {/* Slider */}
             <Swiper
-                spaceBetween={40}
+                spaceBetween={260}
                 slidesPerView={1}
                 grabCursor={true}
                 className='portfolio-slider'
             >
+                <SwiperSlide>
+                    <img src={th1} alt="" />
+                </SwiperSlide>
+                <SwiperSlide>
+                    <img src={th2} alt="" />
+                </SwiperSlide>
+                <SwiperSlide>
+                    <img src={th3} alt="" />
+                </SwiperSlide>
+                <SwiperSlide>
+                    <img src={th1} alt="" />
+                </SwiperSlide>
+                <SwiperSlide>
+                    <img src={th2} alt="" />
+                </SwiperSlide>
+                <SwiperSlide>
+                    <img src={th3} alt="" />
+                </SwiperSlide>
                 <SwiperSlide>
                     <img src={th1} alt="" />
                 </SwiperSlide>

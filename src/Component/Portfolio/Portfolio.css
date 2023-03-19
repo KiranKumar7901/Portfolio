@@ -46,3 +46,9 @@
     top: 28rem;
     left: 60rem;
 }
+
+@media screen and(max-width: 480px) {
+    .portfolio{
+        height: 30vh;
+    }
+}
