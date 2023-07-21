@@ -3,9 +3,7 @@ import './Intro.css'
 import GitHub from '@iconscout/react-unicons/icons/uil-github'
 import LinkedIn from '@iconscout/react-unicons/icons/uil-linkedin'
 import Instagram from '@iconscout/react-unicons/icons/uil-instagram'
-import blue from '../Images/1.png'
-import orange from '../Images/2.png'
-import boy from '../Images/3.png'
+import boy from '../Images/31.png'
 import FloatingDiv from '../FloatingDiv/FloatingDiv'
 import crown from '../Images/crown.png'
 import award from '../Images/award.png'
@@ -36,20 +34,18 @@ const Intro = () => {
               </div>
           </div>
           <div className="i-right">
-              <img src={orange} alt="" />
-              <img src={blue} alt="" />
               <img src={boy} alt="" />
               <motion.img
-                  initial={{ left: '-5%' }}
-                  whileInView={{ left: '5%' }}
+                  initial={{ left: '-1rem' }}
+                  whileInView={{ left: '2rem' }}
                   transition={transition}
                   src={cmh} alt="" />
               <motion.div
-                  initial={{ top: '-15%' }}
-                  whileInView={{ top: '0%' }}
+                  initial={{ top: '-5rem' }}
+                  whileInView={{ top: '-1rem' }}
                   transition={transition}
                   className="floating-div"
-                  style={{ top: '-4%', left: '68%' }}>
+                  style={{ top: '-4%', left: '31rem' }}>
                   <FloatingDiv image={crown} txt1='Web' txt2='Developer'/>
               </motion.div>
               <motion.div
@@ -57,7 +53,7 @@ const Intro = () => {
                   whileInView={{ top: '22rem' }}
                   transition={transition}
                   className="floating-div"
-                  style={{ top: '18rem', left: '0rem' }}>
+                  style={{ top: '18rem', left: '2rem' }}>
                   <FloatingDiv image={award} txt1='Best Design' txt2='Award'/>
               </motion.div>
               {/* blur div */}
