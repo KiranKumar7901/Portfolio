@@ -41,6 +41,7 @@
         display: none;
     }
     .n-button{
-        display: none;
+        margin-left: 100px;
+        font-weight: bold;
     }
   }
