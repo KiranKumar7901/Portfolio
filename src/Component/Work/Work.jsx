@@ -22,21 +22,11 @@ const Work = () => {
         </span>
         <span>Technologies!</span>
         <span style={darkMode ? { color: "var(--blueCard)" } : {}}>
-          With a Diverse background that spans Web Development, UI/UX Design, MERN Stack
+          With a Diverse background that spans Web Development, and UI/UX Design,
           <br />
-          Development, and Machine Learning
+          I bring a unique perspective to every project.
           <br />
-          Animi voluptatum, excepturi, natus enim temporibus quasi sed impedit
-          alias,
-          <br /> eveniet quaerat optio nam recusandae.
-          <br />
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          <br />
-          Doloribus laboriosam minima deserunt totam odio quod porro aperiam
-          debitis illum,
-          <br />
-          unde dolore sit dignissimos incidunt,
-          <br />a consequuntur doloremque molestiae iste distinctio!
+          I'm always eager to take on new challenges and explore innovative solutions.
         </span>
         <button className="button s-button">Hire Me</button>
         <div className="blur s-blur1" style={{ background: "#ABF1FF9" }}></div>

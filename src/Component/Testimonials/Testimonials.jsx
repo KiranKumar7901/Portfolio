@@ -4,6 +4,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper";
 import "swiper/css/pagination";
 import "swiper/css";
+import unstop from "../Images/unstop.png";
+import gfg from "../Images/gfg.png";
 import { themeContext } from "../../context";
 import { useContext } from "react";
 
@@ -13,14 +15,14 @@ const Testimonials = () => {
 
   const clients = [
     {
-      Name: "Kiran",
+      Title: <img src={unstop} alt="Unstop"/>,
       review:
-        "Participated in the Namma Yatri",
+        "I got participation certificate of Namma Yatri from unstop. It enables students to eventually get hired by their dream employers.",
     },
     {
-      Name: "Karan",
+      Title: <img src={gfg} alt="GeeksforGeeks"/>,
       review:
-        "Through my dedication and hardwork, I have solved over 200 challenging coding problems on popular platform GeeksforGeeks.",
+        "Through my dedication and hardwork, I have solved over 200+ challenging coding problems on popular platforms like GeeksforGeeks and LeetCode.",
     },
     
   ];
@@ -46,7 +48,7 @@ const Testimonials = () => {
           return (
             <SwiperSlide key={index}>
               <div className="testimonials" style={darkMode?{background: 'rgba(255, 200, 150, 0.2)',border:'7px solid rgb(255, 200, 150)'}:{}}>
-                <span style={darkMode?{color: 'var(--orange)'}:{}}>{clients.Name}</span>
+                <span style={darkMode?{color: 'var(--orange)'}:{}}>{clients.Title}</span>
                 <span style={darkMode?{color: 'var(--blueCard)'}:{}}>{clients.review}</span>
               </div>
             </SwiperSlide>

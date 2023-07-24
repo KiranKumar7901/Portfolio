@@ -38,9 +38,8 @@
     border-top-right-radius: 40px;
     border-bottom-left-radius: 40px;
 }
-.testimonials span:nth-of-type(1){
-    font-size: 2rem;
-    font-weight: bold;
+.un{
+    transform: scale(0.5);
 }
 .testimonials span:nth-of-type(2){
     color: var(--gray);

@@ -22,11 +22,10 @@ const Services = () => {
         <span style={{ color: darkMode ? '#DDF8FE' : '' }}>My Awesome</span>
         <span>Services</span>
         <span style={{ color: darkMode ? 'var(--blueCard)' : '' }}>
-          I have developed an app using Java (Student Report Card Handling System) <br />
-          which takes the record of the student and generate the report card of the students.<br />
-          I have developed my Personal Portfolio using React Js and some small projects <br />
-          like Calculator, Clock using JavaScript <br />
-          and also developed an E-commerce Site and clone of Flipkart. 
+          I offer a versatile and dynamic approach to problem-solving that allows me to tackle challenges <br />
+          with confidence and creativity.<br />
+          Whether it's building websites, creating creative interfaces or optimizing user experiences.<br />
+          I'm committed to deliver high quality work and driving success for clients.
         </span>
         <a href={dev} download>
           <button className="button s-button">Download CV</button>
