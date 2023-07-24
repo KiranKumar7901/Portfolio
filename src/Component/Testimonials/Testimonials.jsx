@@ -15,25 +15,21 @@ const Testimonials = () => {
     {
       Name: "Kiran",
       review:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, voluptatum dolorem! Dicta iure, amet quos et commodi distinctio, asperiores odit impedit excepturi, quae magnam libero tenetur facere ducimus obcaecati optio!",
+        "Participated in the Namma Yatri",
     },
     {
       Name: "Karan",
       review:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, voluptatum dolorem! Dicta iure, amet quos et commodi distinctio, asperiores odit impedit excepturi, quae magnam libero tenetur facere ducimus obcaecati optio!",
+        "Through my dedication and hardwork, I have solved over 200 challenging coding problems on popular platform GeeksforGeeks.",
     },
-    {
-      Name: "Krish",
-      review:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, voluptatum dolorem! Dicta iure, amet quos et commodi distinctio, asperiores odit impedit excepturi, quae magnam libero tenetur facere ducimus obcaecati optio!",
-    },
+    
   ];
   return (
     <div className="t-wrapper" id="Testimonials">
       <div className="t-heading">
-        <span>Clients always get </span>
-        <span>Exceptional Work </span>
-        <span>from me...</span>
+        <span>Achievements </span>
+        <span>till </span>
+        <span>now...</span>
         <div
           className="blur t-blur1"
           style={{ background: "var(--purple" }}

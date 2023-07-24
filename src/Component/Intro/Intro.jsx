@@ -24,7 +24,7 @@ const Intro = () => {
               <div className="i-name">
                   <span style={{ color: darkMode ? 'var(--blueCard)' : '' }}>Hi! I am</span>
                   <span>Kiran Kumar</span>
-                  <span style={{color:darkMode?'var(--blueCard)':''}}>Frontend Web Developer <br />Languages Known: HTML, CSS, JavaScript, C, C++ <br/> Java, ReactJs, MySQl.</span>
+                  <span style={{color:darkMode?'var(--blueCard)':''}}>I'm a Web Developer <br />with experience in UI/UX Design. <br/>My expertise lies within front-end web apps.</span>
               </div>
               <button className="button i-button">Hire Me</button>
               <div className="i-icons" style={{ color: darkMode ? 'var(--blueCard)' : '' }} >
@@ -54,7 +54,7 @@ const Intro = () => {
                   transition={transition}
                   className="floating-div"
                   style={{ top: '18rem', left: '2rem' }}>
-                  <FloatingDiv image={award} txt1='Best Design' txt2='Award'/>
+                  <FloatingDiv image={award} txt1='Coding' txt2='Enthusiast'/>
               </motion.div>
               {/* blur div */}
               <div className="blur" style={{ background: 'rgb(238,210,255' }}></div>
