@@ -1,10 +1,10 @@
 import React from "react";
 import "./Work.css";
-import upwork from "../Images/upwork.png";
-import fb from "../Images/fb.png";
-import netflix from "../Images/netflix.png";
-import spotify from "../Images/spotify.png";
-import amazon from "../Images/amazon.png";
+import fsd from "../Images/fsd.png";
+import jd from "../Images/ui.png";
+import msd from "../Images/msd.png";
+import ml from "../Images/ml.png";
+// import amazon from "../Images/amazon.png";
 import { themeContext } from "../../context";
 import { useContext } from "react";
 
@@ -18,13 +18,13 @@ const Work = () => {
     <div className="works" id='Experience'>
       <div className="awesome w-left">
         <span style={darkMode ? { color: "var(--blueCard)" } : {}}>
-          Works for All these
+          Works in All these
         </span>
-        <span>Brands & Clients</span>
+        <span>Technologies!</span>
         <span style={darkMode ? { color: "var(--blueCard)" } : {}}>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          With a Diverse background that spans Web Development, UI/UX Design, MERN Stack
           <br />
-          Iste, autem numquam magnam inventore reiciendis hic?
+          Development, and Machine Learning
           <br />
           Animi voluptatum, excepturi, natus enim temporibus quasi sed impedit
           alias,
@@ -49,19 +49,19 @@ const Work = () => {
           transition={{duration: 3.5,type: 'spring'}}
           className="w-mainCircle" style={darkMode ? { zIndex: '2' } : {}}>
           <div className="w-secCircle">
-            <img src={upwork} alt="" />
+            <img src={fsd} alt="" />
           </div>
           <div className="w-secCircle">
-            <img src={fb} alt="" />
+            <img src={jd} alt="" />
           </div>
-          <div className="w-secCircle" style={darkMode? {border:'5px solid #b2b2b2',zIndex:'2'}:{}}>
+          {/* <div className="w-secCircle" style={darkMode? {border:'5px solid #b2b2b2',zIndex:'2'}:{}}>
             <img src={amazon} alt="" />
+          </div> */}
+          <div className="w-secCircle">
+            <img src={ml} alt="" />
           </div>
           <div className="w-secCircle">
-            <img src={netflix} alt="" />
-          </div>
-          <div className="w-secCircle">
-            <img src={spotify} alt="" />
+            <img src={msd} alt="" />
           </div>
         </motion.div>
         <div className="blur s-blur1" style={{ background: "var(--color)" }}></div>

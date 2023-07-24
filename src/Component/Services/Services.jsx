@@ -42,8 +42,8 @@ const Services = () => {
           style={{ top: "2rem", left: "25rem" }}>
           <Card
             emoji={Heartemoji}
-            heading={"Design"}
-            detail={"Figma, Sketch, Photoshop, Adobe, Blender 3D, Adobe XD"}
+            heading={"UI/UX Design"}
+            detail={"Figma, Adobe Photoshop, Canva, Adobe Illustrator, Adobe XD"}
           />
         </motion.div>
         <motion.div
@@ -54,7 +54,7 @@ const Services = () => {
           <Card
             emoji={developer}
             heading={"Developer"}
-            detail={"HTML, CSS, JavaScript, C++, Java, ReactJs, MySQL"}
+            detail={"HTML, CSS, JavaScript, PHP, ReactJs, Bootstrap"}
           />
         </motion.div>
         <motion.div
@@ -64,8 +64,8 @@ const Services = () => {
           style={{ top: "25rem", left: "26rem" }}>
           <Card
             emoji={dev}
-            heading={"UI/UX"}
-            detail={"Adobe XD, Figma, Adobe Illustrator, Adobe Photoshop"}
+            heading={"Coder"}
+            detail={"C, C++, Java, MYSQL"}
           />
         </motion.div>
         <div
