@@ -9,6 +9,7 @@ import crown from '../Images/crown.png'
 import award from '../Images/award.png'
 import cmh from '../Images/cmh.png'
 import { motion } from 'framer-motion'
+import { Link } from "react-scroll";
 
 import { themeContext } from '../../context'
 import { useContext } from 'react'
@@ -26,7 +27,9 @@ const Intro = () => {
                   <span>Kiran Kumar</span>
                   <span style={{color:darkMode?'var(--blueCard)':''}}>I'm a Web Developer <br />with experience in UI/UX Design. <br/>My expertise lies within front-end web apps.</span>
               </div>
+              <Link spy={true} to='Contact' smooth={true}>
               <button className="button i-button">Hire Me</button>
+            </Link>
               <div className="i-icons" style={{ color: darkMode ? 'var(--blueCard)' : '' }} >
                   <Instagram/>
                   <GitHub/>

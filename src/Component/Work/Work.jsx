@@ -8,6 +8,7 @@ import ml from "../Images/ml.png";
 import { themeContext } from "../../context";
 import { useContext } from "react";
 
+import { Link } from "react-scroll";
 import { motion } from "framer-motion";
 
 const Work = () => {
@@ -28,7 +29,11 @@ const Work = () => {
           <br />
           I'm always eager to take on new challenges and explore innovative solutions.
         </span>
+
+        <Link spy={true} to='Contact' smooth={true}>
         <button className="button s-button">Hire Me</button>
+            </Link>
+
         <div className="blur s-blur1" style={{ background: "#ABF1FF9" }}></div>
       </div>
       <div className="w-right">
