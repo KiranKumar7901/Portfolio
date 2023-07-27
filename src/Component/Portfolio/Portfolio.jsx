@@ -1,9 +1,9 @@
 import React from 'react'
 import './Portfolio.css'
-// import th1 from "../Images/th1.jpg";
-import th1 from "../Images/th2.jpg";
+import th1 from "../Images/th1.jpg";
 import th2 from "../Images/th2.jpg";
 import th3 from "../Images/th3.jpg";
+import th4 from "../Images/th4.jpg";
 
 import { themeContext } from '../../context';
 import { useContext } from 'react';
@@ -42,26 +42,16 @@ const Portfolio = () => {
             >
                 <SwiperSlide>
                     <img src={th1} alt="" />
-                </SwiperSlide>
+                </SwiperSlide>                
                 <SwiperSlide>
                     <img src={th2} alt="" />
                 </SwiperSlide>
                 <SwiperSlide>
                     <img src={th3} alt="" />
-                </SwiperSlide>
+                </SwiperSlide>                
                 <SwiperSlide>
-                    <img src={th1} alt="" />
+                    <img src={th4} alt="" />
                 </SwiperSlide>
-                <SwiperSlide>
-                    <img src={th2} alt="" />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img src={th3} alt="" />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img src={th3} alt="" />
-                </SwiperSlide>
-                
             </Swiper>
             <div className="blur p-blur1" style={{background: 'var(--purple)'}}></div>
             <div className="blur p-blur2" style={{background: '#fca71fab'}}></div>
