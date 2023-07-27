@@ -21,8 +21,15 @@
 /* slider */
 .portfolio .swiper{
     overflow: visible!important;
+    left: -2.6rem;
 }
-
+.portfolio .swiper-pagination{
+    bottom: -50px!important;
+    left: 2.6rem!important;
+}
+.portfolio .swiper-pagination-bullet-active{
+    background-color: rgb(245, 195, 44);
+}
 .portfolio-slider{
     margin-top: 3rem;
     width: 20%;
@@ -31,8 +38,8 @@
     width: 20rem;
 }
 .portfolio img{
-    height: 13rem;
-    width: 19rem;
+    height: 20rem;
+    width: 26rem;
     filter: drop-shadow(-12px 15px 13px rgba(0,0,0,0.25));
     border-radius: 19px;
 }
@@ -50,5 +57,15 @@
 @media screen and (max-width: 480px) {
     .portfolio-slider{
         width: 80%;
+    }
+    .portfolio .swiper{
+        left: 0rem;
+    }
+    .portfolio .swiper-pagination{
+        left: 0rem!important;
+    }
+    .portfolio img{
+        height: 13rem;
+        width: 20rem;
     }
 }
