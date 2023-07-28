@@ -49,6 +49,7 @@
 .i-right{
     flex: 1;
     position: relative;
+    z-index: -1;
 }
 .i-right>*{
     position: absolute;

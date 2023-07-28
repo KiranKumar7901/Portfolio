@@ -36,7 +36,7 @@ const Intro = () => {
                   <LinkedIn />
               </div>
           </div>
-          <div className="i-right">
+          <div className="i-right" style={darkMode?{zIndex: 0}:{}}>
               <img src={boy} alt="" />
               <motion.img
                   initial={{ left: '-1rem' }}
@@ -60,8 +60,8 @@ const Intro = () => {
                   <FloatingDiv image={award} txt1='Coding' txt2='Enthusiast'/>
               </motion.div>
               {/* blur div */}
-              <div className="blur" style={{ background: 'rgb(238,210,255' }}></div>
-              <div className="blur" style={{background: '#C1F5FF',top:'17rem',width:'21rem',height:'11rem',left:'-25rem'}}></div>
+              <div className="blur" style={darkMode ? {left: '12rem', top:'-3rem', background: 'rgba(252,166,31)'}:{ background: 'rgb(238,210,255' }}></div>
+              <div className="blur" style={darkMode ? {background: 'none'}:{background: '#C1F5FF',top:'17rem',width:'21rem',height:'11rem',left:'-25rem'}}></div>
           </div>
     </div>
   )

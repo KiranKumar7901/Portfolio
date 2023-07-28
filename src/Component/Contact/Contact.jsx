@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import './Contact.css'
+import check from "../Images/checked.png";
 
 import { themeContext } from '../../context';
 import { useContext } from 'react';
@@ -11,7 +12,20 @@ const Contact = () => {
   const darkMode = theme.state.darkMode;
 
     const form = useRef();
-    const [done, setDone] = useState(false);
+  const [done, setDone] = useState(false);
+  
+  const Modal = () => {
+      return (
+        <>
+          <div className="m-wrapper" onClick={()=>setDone(false)} style={darkMode?{backgroundColor:"rgba(0, 0, 0, 0.1)"}:{}}></div>
+            <div className="m-container" style={darkMode?{border:'3px solid orange'}:{}}>    
+            <p style={darkMode?{color: 'black'}:{}}>Thank for Contacting Me!!!</p>
+            <img src={check } alt="Check" />
+          <button className='button m-button' style={{cursor: 'pointer'} } onClick={()=>setDone(false)}>Close</button>
+          </div>
+      </>
+    );
+  }
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -34,14 +48,14 @@ const Contact = () => {
                   <div className="blur c-blur1" style={{background: "#fca71fab"}}></div>
               </div>
           </div>
-          <div className="c-right" style={darkMode?{background: 'rgba(245,195,44,0.1)',alignItems: 'center',height:'50vh',borderRadius:'20px',boxShadow: '-5px 10px 8px rgba(221, 248, 254, 0.3)',marginTop:'-3rem'}:{}}>
+          <div className="c-right" style={darkMode?{background: 'rgba(245,195,44,0.1)',alignItems: 'center',height:'50vh',borderRadius:'20px',boxShadow: '-5px 10px 8px rgba(221, 248, 254, 0.1)',marginTop:'-3rem', padding: '2rem 1rem 0rem 1rem',zIndex:1}:{}}>
               <form ref={form} onSubmit={sendEmail}>
                   <input type="text" name='user-name' placeholder='Name' className='user' style={darkMode?{background:'rgba(255,255,255,0.1)',border:'2px solid var(--gray)',color:'var(--blueCard)'}:{}} />
                   <input type="email" name='user-email' placeholder='E-mail' className='user' style={darkMode?{background:'rgba(255,255,255,0.1)',border:'2px solid var(--gray)',color:'var(--blueCard)'}:{}}/>
                   <textarea name="message" placeholder='Message' className="user" style={darkMode?{background:'rgba(255,255,255,0.1)',border:'2px solid var(--gray)',color:'var(--blueCard)'}:{}}></textarea>
-                  <input className='button' type="submit" value='Send' />
-                  <div className="blur c-blur2" style={{ background: 'var(--purple' }}></div>
-                  <span>{done && "Thanks for Contacting Me!"}</span>
+                  <button className='button c0-button' type="submit">Send</button>
+          <div className="blur c-blur2" style={darkMode ? { background: 'none' }:{ background: 'var(--purple' }}></div>
+                  <span>{done && <Modal/>}</span>
               </form>
           </div>
     </div>

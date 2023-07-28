@@ -2,17 +2,24 @@ import React from "react";
 import Toggle from "../Toggle/Toggle";
 import "./Navbar.css";
 
+import { themeContext } from '../../context';
+import { useContext } from 'react';
+
 import { Link } from "react-scroll";
 
 const Navbar = () => {
+
+  const theme = useContext(themeContext);
+  const darkMode = theme.state.darkMode;
+  
   return (
     <div className="n-wrapper">
       <div className="n-left">
         <div className="n-name">Kiran</div>
         <Toggle />
       </div>
-      <div className="blur n-blur1" style={{top:'-2rem',left:'-2rem',background:'var(--purple)'}}></div>
-      <div className="blur n-blur2" style={{top:'5rem',left:'32rem',background:'var(--color)'}}></div>
+      <div className="blur n-blur1" style={darkMode?{background: 'none'}:{top:'-2rem',left:'-2rem',background:'var(--purple)'}}></div>
+      <div className="blur n-blur2" style={darkMode?{background: 'none'}:{top:'5rem',left:'32rem',background:'var(--color)'}}></div>
       <div className="n-right">
         <div className="n-list">
           <ul style={{ listStyleType: "none" }}>

@@ -20,7 +20,7 @@ const Portfolio = () => {
     const darkMode = theme.state.darkMode;
 
     return (
-        <div className="portfolio" id='Portfolio'>
+        <div className="portfolio" id='Portfolio' style={darkMode?{zIndex:0}:{}}>
             {/* heading */}
             <span style={darkMode?{color: 'var(--blueCard)'}:{}}>Recent Projects</span>
             <span>Portfolio</span>
@@ -53,8 +53,8 @@ const Portfolio = () => {
                     <img src={th4} alt="" />
                 </SwiperSlide>
             </Swiper>
-            <div className="blur p-blur1" style={{background: 'var(--purple)'}}></div>
-            <div className="blur p-blur2" style={{background: '#fca71fab'}}></div>
+            <div className="blur p-blur1" style={darkMode?{background: 'none'}:{background: 'var(--purple)'}}></div>
+            <div className="blur p-blur2" style={darkMode?{background: 'none'}:{background: '#fca71fab'}}></div>
         </div>
   )
 }

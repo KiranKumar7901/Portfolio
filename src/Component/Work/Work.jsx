@@ -36,7 +36,7 @@ const Work = () => {
 
         <div className="blur s-blur1" style={{ background: "#ABF1FF9" }}></div>
       </div>
-      <div className="w-right">
+      <div className="w-right" style={darkMode?{zIndex:0}:{}}>
         <motion.div
           initial={{ rotate: 45 }}
           whileInView={{ rotate: 0 }}
@@ -59,7 +59,7 @@ const Work = () => {
             <img src={msd} alt="" />
           </div>
         </motion.div>
-        <div className="blur s-blur1" style={{ background: "var(--color)" }}></div>
+        <div className="blur s-blur1" style={darkMode ? { background: 'none' }:{ background: "var(--color)" }}></div>
         {/* background circles */}
         <div
           className="w-backCircle blueCircle"

@@ -13,7 +13,7 @@ const Footer = () => {
   const darkMode = theme.state.darkMode;
   
   return (
-      <div className="footer" >
+      <div className="footer" style={darkMode?{zIndex: 0}:{}}>
       <img src={wave1} alt="" style={{width: '100%'}}/>
       <div className="f-content" style={darkMode?{color:'black'}:{}}>
         <span>kirankumar992001@gmail.com</span>

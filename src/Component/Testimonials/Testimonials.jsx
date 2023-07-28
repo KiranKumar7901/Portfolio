@@ -27,16 +27,16 @@ const Testimonials = () => {
     
   ];
   return (
-    <div className="t-wrapper" id="Testimonials">
+    <div className="t-wrapper" id="Testimonials" style={darkMode?{zIndex:0}:{}}>
       <div className="t-heading">
         <span>Achievements </span>
         <span>till </span>
         <span>now...</span>
         <div
           className="blur t-blur1"
-          style={{ background: "var(--purple" }}
+          style={darkMode ? { background: 'none' }:{ background: "var(--purple" }}
         ></div>
-        <div className="blur t-blur2" style={{ background: "skyblue" }}></div>
+        <div className="blur t-blur2" style={darkMode ? { background: 'none' }:{ background: "skyblue" }}></div>
       </div>
       {/* slider */}
       <Swiper

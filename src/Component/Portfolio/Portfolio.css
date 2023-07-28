@@ -5,6 +5,7 @@
     justify-content: center;
     height: 100vh;
     position: relative;
+    z-index: -1;
 }
 /* heading */
 .portfolio span:nth-of-type(1){

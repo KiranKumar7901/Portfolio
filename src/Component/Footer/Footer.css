@@ -3,7 +3,8 @@
     align-items: center;
     margin: -0.5rem -3.5rem;
     position: relative;
-    margin-top: -20rem;
+    margin-top: -30rem;
+    z-index: -1;
 }
 .f-content{
     position: absolute;
