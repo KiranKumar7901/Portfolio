@@ -1,12 +1,29 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Contact.css'
 
 import { themeContext } from '../../context';
 import { useContext } from 'react';
+import emailjs from '@emailjs/browser';
+import { useRef } from 'react';
 
 const Contact = () => {
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
+
+    const form = useRef();
+    const [done, setDone] = useState(false);
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_bh6byfm', 'template_r0hlorl', form.current, 'M6h-2kT09Bns5ZOwd')
+      .then((result) => {
+          console.log(result.text);
+          setDone(true);
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
 
   return (
     <div className="contact-form" id='Contact'>
@@ -18,12 +35,13 @@ const Contact = () => {
               </div>
           </div>
           <div className="c-right" style={darkMode?{background: 'rgba(245,195,44,0.1)',alignItems: 'center',height:'50vh',borderRadius:'20px',boxShadow: '-5px 10px 8px rgba(221, 248, 254, 0.3)',marginTop:'-3rem'}:{}}>
-              <form action="">
-                  <input type="text" placeholder='Name' className='user' style={darkMode?{background:'rgba(255,255,255,0.1)',border:'2px solid var(--gray)',color:'var(--blueCard)'}:{}} />
-                  <input type="email" placeholder='E-mail' className='user' style={darkMode?{background:'rgba(255,255,255,0.1)',border:'2px solid var(--gray)',color:'var(--blueCard)'}:{}}/>
+              <form ref={form} onSubmit={sendEmail}>
+                  <input type="text" name='user-name' placeholder='Name' className='user' style={darkMode?{background:'rgba(255,255,255,0.1)',border:'2px solid var(--gray)',color:'var(--blueCard)'}:{}} />
+                  <input type="email" name='user-email' placeholder='E-mail' className='user' style={darkMode?{background:'rgba(255,255,255,0.1)',border:'2px solid var(--gray)',color:'var(--blueCard)'}:{}}/>
                   <textarea name="message" placeholder='Message' className="user" style={darkMode?{background:'rgba(255,255,255,0.1)',border:'2px solid var(--gray)',color:'var(--blueCard)'}:{}}></textarea>
                   <input className='button' type="submit" value='Send' />
-                  <div className="blur c-blur2" style={{background:'var(--purple'}}></div>
+                  <div className="blur c-blur2" style={{ background: 'var(--purple' }}></div>
+                  <span>{done && "Thanks for Contacting Me!"}</span>
               </form>
           </div>
     </div>

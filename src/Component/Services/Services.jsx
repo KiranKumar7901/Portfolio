@@ -27,8 +27,8 @@ const Services = () => {
           Whether it's building websites, creating creative interfaces or optimizing user experiences.<br />
           I'm committed to deliver high quality work and driving success for clients.
         </span>
-        <a href={dev} download>
-          <button className="button s-button">Download CV</button>
+        <a href={dev} className='s-button' download>
+          <button className="button">Download CV</button>
         </a>
         <div className="blur s-blur1" style={{ background: "#ABF1FF9" }}></div>
       </div>

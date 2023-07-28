@@ -17,12 +17,12 @@ const Testimonials = () => {
     {
       Title: <img src={unstop} alt="Unstop"/>,
       review:
-        "I got participation certificate of Namma Yatri from unstop. It enables students to eventually get hired by their dream employers.",
+        "I got participation certificate of Namma Yatri from unstop.",
     },
     {
       Title: <img src={gfg} alt="GeeksforGeeks"/>,
       review:
-        "Through my dedication and hardwork, I have solved over 200+ challenging coding problems on popular platforms like GeeksforGeeks and LeetCode.",
+        "Through my dedication and hardwork, I have solved challenging coding problems on popular platforms like GeeksforGeeks and LeetCode.",
     },
     
   ];

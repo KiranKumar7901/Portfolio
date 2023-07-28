@@ -21,11 +21,11 @@
 /* slider */
 .portfolio .swiper{
     overflow: visible!important;
-    left: -6.5rem;
+    left: -6rem;
 }
 .portfolio .swiper-pagination{
     bottom: -50px!important;
-    left: 7rem!important;
+    left: 6.5rem!important;
 }
 .portfolio .swiper-pagination-bullet-active{
     background-color: rgb(245, 195, 44);
