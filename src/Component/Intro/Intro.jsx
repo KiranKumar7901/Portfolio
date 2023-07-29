@@ -30,10 +30,10 @@ const Intro = () => {
               <Link spy={true} to='Contact' smooth={true}>
               <button className="button i-button">Hire Me</button>
             </Link>
-              <div className="i-icons" style={{ color: darkMode ? 'var(--blueCard)' : '' }} >
-                  <Instagram/>
-                  <GitHub/>
-                  <LinkedIn />
+              <div className="i-icons" >
+              <a href="https://www.linkedin.com/in/kiran-kumar-514793179" style={{ color: darkMode ? 'var(--blueCard)' : 'var(--black)' }}><LinkedIn /></a>
+              <a href="https://github.com/KiranKumar7901" style={{ color: darkMode ? 'var(--blueCard)' : 'var(--black)' }}><GitHub/></a>
+              <a href="https://instagram.com/_karanprajapati_01?utm_source=qr&igshid=MzNINGNkZWQ4Mg%3D%3d" style={{ color: darkMode ? 'var(--blueCard)' : 'var(--black)' }}><Instagram/></a>
               </div>
           </div>
           <div className="i-right" style={darkMode?{zIndex: 0}:{}}>

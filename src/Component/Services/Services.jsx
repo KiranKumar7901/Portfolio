@@ -2,7 +2,7 @@ import React from "react";
 import "./Services.css";
 import Heartemoji from "../Images/heartemoji.png";
 import developer from "../Images/dd.png";
-import dev from "../Images/dl.png";
+import dev from "../Images/Resume.pdf";
 import Card from "../Card/Card";
 
 import { themeContext } from "../../context";

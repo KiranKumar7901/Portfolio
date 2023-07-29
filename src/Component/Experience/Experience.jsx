@@ -16,7 +16,7 @@ const Experience = () => {
               <span style={darkMode?{color:'var(--gray)'}:{}}>Completed</span>
           </div>
           <div className="achievement">
-              <div className="circle" style={darkMode?{background: 'linear-gradient(to bottom,#87e6fb 0%,#ffccbb 100%)', border:'10px solid var(--gray)'}:{}}>0.5+</div>
+              <div className="circle" style={darkMode?{background: 'linear-gradient(to bottom,#87e6fb 0%,#ffccbb 100%)', border:'10px solid var(--gray)'}:{}}>0+</div>
               <span style={darkMode?{color:'var(--orange)'}:{}}>Years</span>
               <span style={darkMode?{color:'var(--gray)'}:{}}>Experience</span>
           </div>

@@ -17,7 +17,7 @@ const Contact = () => {
   const Modal = () => {
       return (
         <>
-          <div className="m-wrapper" onClick={()=>setDone(false)} style={darkMode?{backgroundColor:"rgba(0, 0, 0, 0.1)"}:{}}></div>
+          <div className="m-wrapper" onClick={()=>setDone(false)} style={darkMode?{backgroundColor:"rgba(0, 0, 0, 0.9)"}:{}}></div>
             <div className="m-container" style={darkMode?{border:'3px solid orange'}:{}}>    
             <p style={darkMode?{color: 'black'}:{}}>Thank for Contacting Me!!!</p>
             <img src={check } alt="Check" />

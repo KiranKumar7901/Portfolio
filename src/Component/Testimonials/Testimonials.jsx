@@ -31,13 +31,13 @@ const Testimonials = () => {
       <div className="t-heading">
         <span>Achievements </span>
         <span>till </span>
-        <span>now...</span>
+        <span>now..</span>
+        </div>
         <div
           className="blur t-blur1"
           style={darkMode ? { background: 'none' }:{ background: "var(--purple" }}
-        ></div>
+          ></div>
         <div className="blur t-blur2" style={darkMode ? { background: 'none' }:{ background: "skyblue" }}></div>
-      </div>
       {/* slider */}
       <Swiper
         modules={[Pagination]}
