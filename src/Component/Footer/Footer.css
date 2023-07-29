@@ -19,7 +19,7 @@
     font-size: 2rem;
 }
 .f-content a{
-    color: white;
+    color: var(--footmat);
     text-decoration: none;
 }
 
