@@ -37,7 +37,7 @@
     top: 14rem;
     left: 14rem;
 }
-.testimonials{
+.Achievements{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -51,7 +51,7 @@
     border-top-right-radius: 40px;
     border-bottom-left-radius: 40px;
 }
-.testimonials span:nth-of-type(2){
+.Achievements span:nth-of-type(2){
     color: var(--gray);
 }
 
@@ -73,7 +73,7 @@
         padding: 0;
         gap: 0rem;
     }
-    .testimonials{
+    .Achievements{
         border-radius: 40px;
         padding: 2rem 4rem;
     }

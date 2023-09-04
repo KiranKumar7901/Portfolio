@@ -2,6 +2,7 @@
     height: 10vh;
     display: flex;
     justify-content: space-between;
+    padding: 0 3rem;
     position: relative;
     z-index: 1;
 }
@@ -38,6 +39,9 @@
     flex: 2;
   }
   @media screen and (max-width: 480px){
+    .n-wrapper{
+        padding: 0;
+    }
     .n-list{
         display: none;
     }

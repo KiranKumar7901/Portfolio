@@ -2,7 +2,8 @@ import React from "react";
 import "./Services.css";
 import Heartemoji from "../Images/heartemoji.png";
 import developer from "../Images/dd.png";
-import dev from "../Images/Resume.pdf";
+import dev from "../Images/ds.png";
+import resume from "../Images/Resume..pdf";
 import Card from "../Card/Card";
 
 import { themeContext } from "../../context";
@@ -27,7 +28,7 @@ const Services = () => {
           Whether it's building websites, creating creative interfaces or optimizing user experiences.<br />
           I'm committed to deliver high quality work and driving success for clients.
         </span>
-        <a href={dev} className='s-button' download>
+        <a href={resume} className='s-button' download>
           <button className="button">Download CV</button>
         </a>
         <div className="blur s-blur1" style={{ background: "#ABF1FF9" }}></div>

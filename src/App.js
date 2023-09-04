@@ -5,7 +5,7 @@ import Services from './Component/Services/Services';
 import Experience from './Component/Experience/Experience';
 import Work from './Component/Work/Work';
 import Portfolio from './Component/Portfolio/Portfolio';
-import Testimonials from './Component/Testimonials/Testimonials';
+import Achievements from './Component/Achievements/Achievements';
 import Contact from './Component/Contact/Contact';
 import Footer from './Component/Footer/Footer';
 import { themeContext } from './context';
@@ -25,7 +25,7 @@ function App() {
       <Work />
       <Experience />
       <Portfolio />
-      <Testimonials />
+      <Achievements />
       <Contact />
       <Footer/>
     </div>

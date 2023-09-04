@@ -1,5 +1,5 @@
 import React from "react";
-import "./Testimonials.css";
+import "./Achievements.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper";
 import "swiper/css/pagination";
@@ -9,7 +9,7 @@ import gfg from "../Images/gfg.png";
 import { themeContext } from "../../context";
 import { useContext } from "react";
 
-const Testimonials = () => {
+const Achievements = () => {
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
 
@@ -17,17 +17,19 @@ const Testimonials = () => {
     {
       Title: <img src={unstop} alt="Unstop"/>,
       review:
-        "I got participation certificate of Namma Yatri from unstop.",
+        <ul type="square"><li>Certificate of Participation in FlipKart Grid 5.0</li>
+          <li>Certificate of Participation in Namma Yatri Coding Challenge</li>
+        </ul>,
     },
     {
       Title: <img src={gfg} alt="GeeksforGeeks"/>,
       review:
-        "Through my dedication and hardwork, I have solved challenging coding problems on popular platforms like GeeksforGeeks and LeetCode.",
+        "Through my dedication and hardwork, I have solved 200+ challenging DSA coding problems on popular platforms like GeeksforGeeks and LeetCode.",
     },
     
   ];
   return (
-    <div className="t-wrapper" id="Testimonials" style={darkMode?{zIndex:0}:{}}>
+    <div className="t-wrapper" id="Achievements" style={darkMode?{zIndex:0}:{}}>
       <div className="t-heading">
         <span>Achievements </span>
         <span>till </span>
@@ -47,7 +49,7 @@ const Testimonials = () => {
         {clients.map((clients, index) => {
           return (
             <SwiperSlide key={index}>
-              <div className="testimonials" style={darkMode?{background: 'rgba(255, 200, 150, 0.2)',border:'7px solid rgb(255, 200, 150)'}:{}}>
+              <div className="Achievements" style={darkMode?{background: 'rgba(255, 200, 150, 0.2)',border:'7px solid rgb(255, 200, 150)'}:{}}>
                 <span style={darkMode?{color: 'var(--orange)'}:{}}>{clients.Title}</span>
                 <span style={darkMode?{color: 'var(--blueCard)'}:{}}>{clients.review}</span>
               </div>
@@ -59,4 +61,4 @@ const Testimonials = () => {
   );
 };
 
-export default Testimonials;
+export default Achievements;
