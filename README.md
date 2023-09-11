@@ -9,7 +9,6 @@ Build a React website to showcase the following:
 * HTML5
 * CSS3
 * JavaScript (ES6)
-* SCSS
 * Git
 * GitHub
 * React
